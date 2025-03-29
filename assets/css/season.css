@@ -1,0 +1,342 @@
+/* champions.css */
+
+.header-title {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.header-title h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.header-title p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.champion-card {
+    background-color: #262837;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.champion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.champion-badge {
+    display: flex;
+    align-items: center;
+    background-color: #3a3b4e;
+    padding: 8px 12px;
+    border-radius: 50px;
+}
+
+.champion-badge img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.champion-badge span {
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.champion-prize {
+    display: flex;
+    align-items: center;
+    background-color: #3a3b4e;
+    padding: 8px 12px;
+    border-radius: 50px;
+    color: #ffc107;
+}
+
+.champion-prize i {
+    margin-right: 8px;
+}
+
+.team-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    background-color: #3a3b4e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-logo img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.team-info {
+    flex: 1;
+}
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Biar sejajar ke kiri */
+}
+
+
+.team-name {
+    margin: 0 0 5px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.team-captain {
+    margin: 0 0 10px;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.team-captain i {
+    margin-right: 5px;
+    color: #ffc107;
+}
+
+.team-social {
+    display: flex;
+}
+
+.team-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3a3b4e;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.team-social a:hover {
+    background-color: #ffc107;
+    color: #262837;
+}
+
+.team-description {
+    background-color: #3a3b4e;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.mvp-players {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #ffc107 #3a3b4e;
+}
+
+.player-card {
+    min-width: 100px;
+    background-color: #3a3b4e;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.player-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 8px;
+    background-color: #262837;
+}
+
+.player-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.player-info h4 {
+    max-width: 150px; /* Sesuaikan lebar */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.player-info h4:hover {
+    overflow: visible;
+    white-space: normal;
+}
+
+
+.player-info p {
+    margin: 0;
+    color: #ccc;
+    font-size: 0.8rem;
+}
+
+.certificate-gallery {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #ffc107 #3a3b4e;
+}
+
+.certificate-item {
+    min-width: 200px;
+    background-color: #3a3b4e;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.certificate-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.certificate-item p {
+    margin: 0;
+    color: #ccc;
+    font-size: 0.8rem;
+}
+
+.total-earnings {
+    background-color: #3a3b4e;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.total-earnings h3 {
+    margin: 0 0 10px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.earnings-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffc107;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.earnings-amount i {
+    margin-right: 10px;
+}
+
+.second-place .champion-badge {
+    color: #C0C0C0;
+}
+
+.third-place .champion-badge {
+    color: #CD7F32;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3a3b4e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffc107;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e0aa00;
+}
+
+@media (max-width: 480px) {
+    .player-card {
+        min-width: 85px;
+    }
+    
+    .certificate-item {
+        min-width: 150px;
+    }
+    
+    .team-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .team-name {
+        font-size: 1.2rem;
+    }
+}
+
+.back-button-container {
+    padding: 15px;
+}
+
+.back-button {
+    background: #fbca1f;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.back-button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.back-button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+.back-button i {
+    font-size: 18px;
+}
