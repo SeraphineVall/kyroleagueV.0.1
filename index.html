@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="id">
 
@@ -485,4 +486,485 @@
     <script src="assets/js/index.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyro Organizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="icon" type="image/png" href="assets/img/Kydorome.png">
+    <link rel="shortcut icon" href="assets/img/Kydorome.ico" type="image/x-icon">
+    
+</head>
+
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Home Page -->
+    <div id="home-page" class="page active">
+        <div class="header">
+            <div class="logo">
+                <img class="logo-img" src="assets/img/kyro.png" alt="Kyro Logo">
+            </div>
+
+        </div>
+
+        <div class="container">
+
+
+            <div class="featured-tournament">
+                <img src="https://i.pinimg.com/736x/65/fa/37/65fa37dbc96b24fea692471767b1a4cd.jpg"
+                    alt="Featured Tournament">
+                <div class="featured-info">
+                    
+
+                </div>
+            </div>
+
+            <h3 class="section-title">Histori Sang Juara</h3>
+            <div class="tournaments-scroll">
+                <a href="champions/season-1.html" class="tournament-card">
+                    <div class="tournament-img">
+                        <img src="assets/img/kyro-tur.png" alt="Tournament">
+                    </div>
+                    <div class="tournament-info">
+                        <h4>Champions Season #1</h4>
+                        <div class="date">12 April 2025</div>
+                    </div>
+                </a>
+
+            </div>
+
+            <h3 class="section-title">Tournament</h3>
+            <div class="tournament-list">
+                <div class="tournament-item" onclick="loadPage('tournament-detail')">
+                    <div class="tournament-item-img">
+                        <img src="assets/img/crown.png" alt="Tournament">
+                    </div>
+                    <div class="tournament-item-info">
+                        <h4>KYRO Grand Championship 2025</h4>
+                        <div class="date">12 April 2025</div>
+                    </div>
+                    <div class="tournament-item-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <h3 class="section-title">Top Squad</h3>
+                <div class="teams-grid">
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="assets/img/top_1.png" alt="RRQ Logo" class="team-img">
+                        </div>
+                        <h4>-</h4>
+                        <p>-</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="assets/img/top_2.png" alt="EVOS Logo" class="team-img">
+                        </div>
+                        <h4>-</h4>
+                        <p>-</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="assets/img/top_3.png" alt="ONIC Logo" class="team-img">
+                        </div>
+                        <h4>-</h4>
+                        <p>-</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tournament Detail Page -->
+    <div id="tournament-detail" class="page" style="display: none;">
+        <div class="banner-img">
+            <img src="assets/img/banner-detal.png" alt="Tournament Banner">
+            <div class="banner-overlay">
+                <h1>KYRO Grand Championship 2025</h1>
+                <span class="date-badge">12 April 2025</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="info-pills">
+                <div class="info-pill"><i class="fas fa-money-bill-wave"></i>
+                    Rp 15.000</div>
+                <div class="info-pill"><i class="fas fa-gamepad"></i> 5v5</div>
+                <div class="info-pill"><i class="fas fa-trophy"></i> Rp 1.000.000</div>
+                <div class="info-pill"><i class="fas fa-users"></i> 32 Tim</div>
+                <div class="info-pill"><i class="fas fa-map-marker-alt"></i> Online</div>
+            </div>
+
+            <div class="tabs">
+                <div class="tab active" data-tab="overview">Overview</div>
+                <div class="tab" data-tab="rules">Peraturan</div>
+                <div class="tab" data-tab="sponsor">Sponsors</div>
+                <div class="tab" data-tab="schedule">Jadwal</div>
+            </div>
+
+            <div class="tab-content active" id="overview">
+                <p>KYRO Grand Championship 2025 adalah turnamen kompetitif tahunan terbesar yang kami selenggarakan,
+                    menghadirkan pertarungan sengit antara tim-tim terbaik di Indonesia. Dalam edisi tahun ini, sebanyak
+                    32 tim elit dari berbagai daerah akan bertanding dalam serangkaian pertandingan penuh strategi dan
+                    keterampilan tinggi demi meraih gelar juara.</p>
+                <p>Dengan total hadiah sebesar Rp 1.000.000, turnamen ini menjadi ajang yang sangat dinantikan oleh
+                    komunitas esports, tidak hanya sebagai medan pertempuran bagi para pemain profesional tetapi juga
+                    sebagai wadah untuk menunjukkan bakat dan kerja sama tim. KYRO Grand Championship 2025 menjanjikan
+                    pengalaman kompetitif yang spektakuler, dipenuhi dengan aksi intens, strategi cerdas, dan
+                    momen-momen epik yang akan dikenang oleh para penggemar esports di seluruh Penjuru.</p>
+                <h3 class="section-title">Roomtour On</h3>
+                <img src="https://i.pinimg.com/736x/e7/56/79/e756791626ca75269e567152553cab1c.jpg" alt="Roomtour Poster"
+                    class="roomtour-img">
+
+                <p>Roomtour MLBB adalah konsep di mana sebuah tim atau organisasi esports Mobile Legends: Bang Bang
+                    (MLBB) memperlihatkan ruang atau tempat mereka berlatih dan bekerja. Roomtour ini biasanya berupa
+                    video atau foto yang menunjukkan berbagai fasilitas yang digunakan oleh tim untuk meningkatkan
+                    performa mereka dalam kompetisi.</p>
+
+                <div class="action-buttons">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeT2IVI49HIx-5yo9lvTxOEQSj1_aP7ZkfJdtGPnzBNQubQRA/viewform?usp=header" target="_blank" class="btn btn-primary btn-full">Daftar
+                        Sekarang</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgqHIF8tm_tOdLrF2fFNLvWKUo4IU_nl7EM3e_UFyQ57KFBw/viewform?usp=header" target="_blank"
+                        class="btn btn-secondary btn-full">Berikan Feedback</a>
+
+                    <a href="https://tiktok.com/live" target="_blank" class="btn btn-tiktok btn-full">
+                        <i class="fab fa-tiktok"></i> Tonton Live
+                    </a>
+                </div>
+            </div>
+
+            <div class="tab-content" id="rules">
+                <div class="rules-list">
+                    <div class="rule-item">
+                        <div class="rule-header">
+                            <div class="rule-title">Format Turnamen</div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="rule-content">
+                            <p><strong>Babak Kualifikasi → Babak Semifinal:</strong> Best of 1 (BO1)</p>
+<p><strong>Bronze Match → Grand Final:</strong> Best of 3 (BO3)</p>
+<p>Pada Bronze Match dan Grand Final, tim pertama yang meraih 2 poin akan menjadi pemenang.</p>
+<p>Jika kedua tim memiliki poin yang sama (seri), akan diadakan pertandingan penentuan. Tim yang memenangkan pertandingan terakhir akan menjadi juara.</p>
+
+
+                        </div>
+                    </div>
+                   
+                    <div class="rule-item">
+                        <div class="rule-header">
+                            <div class="rule-title">Hadiah</div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="rule-content">
+                            <p>🏆 <strong>Prizepool: Rp 1.000.000</strong></p>
+
+<p>🥇 <strong>Juara 1:</strong> Rp 700.000 + E-Certificate</p>
+<p>🥈 <strong>Juara 2:</strong> Rp 200.000 + E-Certificate</p>
+<p>🥉 <strong>Juara 3:</strong> Rp 100.000 + E-Certificate</p>
+
+                        </div>
+                    </div>
+                    <div class="rule-item">
+                        <div class="rule-header">
+                            <div class="rule-title">Peraturan Pertandingan</div>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="rule-content">
+                            <p><strong>1. Sistem Permainan</strong></p>
+<p>- Babak Kualifikasi hingga Semi Final: Best of 1 (BO1)</p>
+<p>- Bronze Match dan Grand Final: Best of 3 (BO3)</p>
+<p>- Pada Bronze Match dan Grand Final, tim yang pertama kali memperoleh 2 poin menang.</p>
+<p>- Jika skor seri (1-1), akan ada pertandingan penentuan. Tim yang memenangkan pertandingan terakhir adalah pemenang.</p>
+
+<p><strong>2. Tim Mengatur Pertandingan Sendiri</strong></p>
+<p>- Tim bertanggung jawab memastikan kehadiran tepat waktu.</p>
+<p>- Komunikasi dengan lawan diperlukan untuk memulai pertandingan.</p>
+<p>- Tidak ada panitia yang mengawasi langsung setiap pertandingan.</p>
+
+<p><strong>3. Lapor Hasil Pertandingan</strong></p>
+<p>- Tim pemenang wajib mengirimkan screenshot hasil pertandingan ke panitia.</p>
+<p>- Jika terjadi kesalahan laporan, tim lawan dapat mengajukan protes dengan bukti yang valid.</p>
+
+<p><strong>4. Tidak Ada Wasit dalam Game</strong></p>
+<p>- Panitia tidak memantau pertandingan secara langsung.</p>
+<p>- Jika terjadi kecurangan atau masalah, tim harus menyertakan bukti seperti rekaman atau screenshot.</p>
+
+<p><strong>5. Pemain Bertanggung Jawab Penuh</strong></p>
+<p>- Pastikan koneksi internet stabil sebelum bertanding.</p>
+<p>- Tidak ada toleransi untuk keterlambatan atau gangguan teknis.</p>
+<p>- Jika terjadi masalah teknis, tim harus menyelesaikannya sendiri tanpa bantuan panitia.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="sponsor">
+                <div class="teams-grid">
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="assets/img/mlbb.png" alt="Team Logo" class="team-img">
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tab-content" id="schedule">
+                <p><strong class="text-yellow">Sabtu 12 april 2025 :</strong> Fase Sesi Penyisihan</p>
+                <p>19:00 WIB - Selesai</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Page -->
+    <div id="faq-page" class="page" style="display: none;">
+        <div class="header">
+            <div class="logo">
+                <img class="logo-img" src="assets/img/kyro.png" alt="Kyro Logo">
+
+            </div>
+         
+        </div>
+
+        <div class="container">
+          
+            <div class="faq-categories">
+                <div class="faq-category active">Semua</div>
+
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana cara mendaftar turnamen?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pendaftaran dapat dilakukan melalui website resmi kami dengan mengklik tombol "Daftar
+                            Sekarang" pada halaman turnamen yang ingin diikuti. Anda akan diarahkan ke formulir Google
+                            yang harus diisi dengan data perwakilan tim</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah ada biaya pendaftaran?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, terdapat biaya pendaftaran sebesar Rp15.000. Biaya ini dapat mengalami penyesuaian seiring berjalannya waktu.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana sistem pembayaran hadiah?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Hadiah akan ditransfer ke rekening bank yang didaftarkan oleh kapten tim Secepatnya
+                            hari kerja setelah turnamen berakhir. Pastikan data rekening yang diberikan sudah benar dan
+                            aktif.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apa yang terjadi jika ada masalah teknis?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Saat babak final Setiap tim memiliki hak pause terbatas yang dapat digunakan saat terjadi masalah teknis. Jika
+                            masalah tidak dapat diselesaikan dalam waktu pause yang tersedia, tim harus segera
+                            menghubungi admin tournament melalui Discord resmi kami untuk penanganan lebih lanjut.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana jika pemain tidak dapat hadir?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Jika seorang pemain tidak dapat hadir, maka ia akan didiskualifikasi. Toleransi keterlambatan adalah 10 menit setelah waktu pertandingan yang telah ditentukan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact-page" class="page" style="display: none;">
+        <div class="header">
+            <div class="logo">
+                <img class="logo-img" src="assets/img/kyro.png" alt="Kyro Logo">
+            </div>
+          
+        </div>
+
+        <div class="container">
+            <div class="contact-card">
+                <div class="admin-info">
+                    <div class="admin-avatar">
+                        <img src="assets/img/Kydorome.png" alt="Admin Avatar" class="avatar-img">
+                    </div>
+
+                    <div class="admin-details">
+                        <h3>Admin Kyro</h3>
+                        <p>Tournament Manager</p>
+                    </div>
+                </div>
+                <div class="contact-buttons">
+                   
+                    <a href="https://wa.me/+6282120874240" class="contact-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+            <div class="intro-card">
+                <h2><i class="fas fa-trophy"></i> Kyro Organizer</h2>
+                <p>Platform turnamen gaming profesional yang menyediakan pengalaman kompetitif terbaik untuk para pemain
+                    dari berbagai tingkat keahlian.</p>
+            </div>
+
+            <h3 class="section-title">Tim Kami</h3>
+            <div class="team-section">
+                <div class="team-member">
+                    <div class="team-avatar">
+                        <img src="https://i.pinimg.com/736x/2b/ad/6b/2bad6bd36019e5b497cee89d87cbbe57.jpg"
+                            alt="Ahmad Rizky" class="avatar-img">
+                    </div>
+                    <div class="team-name">Seraphine Valtier</div>
+                    <div class="team-role">Graphic Designer</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">
+                        <img src="https://i.pinimg.com/736x/63/5d/a0/635da06f32dd939c5573223bf1857154.jpg"
+                            alt="Dina Putri" class="avatar-img">
+                    </div>
+                    <div class="team-name">Vanyyy</div>
+                    <div class="team-role">Voice Actress</div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-avatar">
+                        <img src="assets/img/naoka.jpg"
+                            alt="Naoka" class="avatar-img">
+                    </div>
+                    <div class="team-name">Naoka</div>
+                    <div class="team-role">Comunity Developer</div>
+                </div>
+
+                
+                <div class="team-member">
+                    <div class="team-avatar">
+                        <img src="assets/img/totti.jpg"
+                            alt="Skyy" class="avatar-img">
+                    </div>
+                    <div class="team-name">Skyy</div>
+                    <div class="team-role">Admin</div>
+                </div>
+
+            </div>
+            <h3 class="section-title">Bergabung dengan Komunitas Kami</h3>
+            <div class="community-links">
+                <a href="https://whatsapp.com/channel/0029VbAOqjb84Om5OEUNf241" class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="link-details">
+                        <h3>Saluran WhatsApp</h3>
+                        <p>Bergabunglah dengan komunitas turnamen kami</p>
+                    </div>
+                    <div class="link-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+                <a href="https://instagram.com/yourchannel" class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="link-details">
+                        <h3>Instagram</h3>
+                        <p>Ikuti kami untuk update turnamen terbaru</p>
+                    </div>
+                    <div class="link-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+                <a href="https://www.tiktok.com/@yourchannel" class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <div class="link-details">
+                        <h3>TikTok</h3>
+                        <p>Tonton highlight dan update turnamen kami</p>
+                    </div>
+                    <div class="link-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+                
+                <a href="https://discord.gg/2g7fXwkP" class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <div class="link-details">
+                        <h3>Server Discord</h3>
+                        <p>Diskusi strategi dan temukan tim</p>
+                    </div>
+                    <div class="link-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+
+
+
+          
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#home-page" class="nav-item active" onclick="navChange(this, 'home-page')">
+            <i class="fas fa-home nav-icon"></i>
+            <span class="nav-text">Beranda</span>
+        </a>
+        <a href="#tournaments" class="nav-item" onclick="navChange(this, 'tournament-detail')">
+            <i class="fas fa-trophy nav-icon"></i>
+            <span class="nav-text">Turnamen</span>
+        </a>
+
+        <a href="#faq-page" class="nav-item" onclick="navChange(this, 'faq-page')">
+            <i class="fas fa-question-circle nav-icon"></i>
+            <span class="nav-text">FAQ</span>
+        </a>
+        <a href="#contact-page" class="nav-item" onclick="navChange(this, 'contact-page')">
+            <i class="fas fa-headset nav-icon"></i>
+            <span class="nav-text">Kontak</span>
+        </a>
+    </div>
+    <script src="assets/js/index.js"></script>
+</body>
+
+>>>>>>> 2419f03 (all commit)
 </html>

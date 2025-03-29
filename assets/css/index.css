@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --dark-bg: #121212;
     --secondary-bg: #1E1E1E;
@@ -936,4 +937,942 @@ a {
 
 .text-yellow {
     color: var(--yellow);
+=======
+:root {
+    --dark-bg: #121212;
+    --secondary-bg: #1E1E1E;
+    --card-bg: #252525;
+    --yellow: #FFD700;
+    --text-primary: #FFFFFF;
+    --text-secondary: #CCCCCC;
+    --hover-bg: rgba(255, 215, 0, 0.1); /* Light yellow for hover effects */
+}
+::-webkit-scrollbar {
+    display: none; /* Untuk Chrome, Safari */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    -ms-overflow-style: none;  /* Untuk Internet Explorer & Edge */
+    scrollbar-width: none;  /* Untuk Firefox */
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 70px; /* Space for navbar */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--secondary-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease; /* Smooth header transition */
+}
+
+.header:hover {
+    background-color: rgba(30, 30, 30, 0.9); /* Darken on hover */
+}
+
+.header-icons i {
+    font-size: 20px;
+    margin-left: 15px;
+    color: var(--text-secondary);
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.header-icons i:hover {
+    color: var(--yellow);
+}
+
+.container {
+    padding: 15px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0 15px;
+    color: var(--text-primary);
+    position: relative;
+    padding-left: 10px;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: var(--yellow);
+}
+
+.intro-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 3px solid var(--yellow);
+    transition: transform 0.2s ease; /* Smooth scale transition */
+}
+
+.intro-card:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+.intro-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.intro-card h2 i {
+    color: var(--yellow);
+    margin-right: 10px;
+}
+
+.intro-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.team-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    min-width: 80px;
+}
+
+.team-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Bikin lingkaran */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc; /* Background default */
+}
+
+.team-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Supaya gambar pas di dalam lingkaran */
+    border-radius: 50%;
+}
+
+
+.team-avatar i {
+    font-size: 24px;
+    color: var(--yellow);
+}
+
+.admin-avatar .avatar-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Agar berbentuk lingkaran */
+    object-fit: cover;
+}
+
+
+.team-name {
+    font-size: 12px;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.team-role {
+    font-size: 10px;
+    color: var(--yellow);
+    text-align: center;
+}
+
+.featured-tournament {
+    position: relative;
+    height: 180px;
+    background-color: var(--secondary-bg);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.featured-tournament img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.featured-info {
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    width: 100%;
+}
+
+.featured-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.date-badge {
+    display: inline-block;
+    background-color: var(--yellow);
+    color: var(--dark-bg);
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.btn-primary {
+    background-color: var(--yellow);
+    color: var(--dark-bg);
+}
+
+.btn-primary:hover {
+    background-color: rgba(255, 215, 0, 0.8); /* Darken on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+
+.btn-secondary:hover {
+    background-color: var(--hover-bg); /* Change background on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.tournaments-scroll {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--yellow) var(--secondary-bg);
+}
+a {
+    color: inherit; /* Menggunakan warna teks dari elemen induk */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.tournament-card {
+    min-width: 150px;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 15px;
+    transition: transform 0.2s ease; /* Smooth scale transition */
+}
+
+.tournament-card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.tournament-img {
+    height: 100px;
+    overflow: hidden;
+}
+
+.tournament-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tournament-info {
+    padding: 10px;
+}
+
+.tournament-info h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tournament-info .date {
+    font-size: 12px;
+    color: var(--yellow);
+}
+
+.tournament-list {
+    margin-bottom: 20px;
+}
+
+.tournament-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth background and scale transition */
+}
+
+.tournament-item:hover {
+    background-color: var(--hover-bg); /* Change background on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.tournament-item-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.tournament-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tournament-item-info {
+    flex: 1;
+}
+
+.tournament-item-info h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.tournament-item-info .date {
+    font-size: 12px;
+    color: var(--yellow);
+}
+
+.tournament-item-arrow {
+    color: var(--yellow);
+    font-size: 18px;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--secondary-bg);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Add a subtle top border */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth color and scale transition */
+    padding: 10px; /* Add padding for better touch targets */
+    border-radius: 8px; /* Rounded corners for nav items */
+}
+
+.nav-item:hover {
+    color: var(--yellow); /* Change color on hover */
+    background-color: rgba(255, 215, 0, 0.1); /* Light yellow background on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.nav-item.active {
+    color: var(--yellow);
+    font-weight: bold; /* Make active item bold */
+    box-shadow: 0 2px 5px rgba(255, 215, 0, 0.5); /* Add shadow to active item */
+}
+
+.nav-icon {
+    font-size: 24px; /* Increase icon size for better visibility */
+    margin-bottom: 4px;
+    transition: transform 0.3s ease; /* Smooth transition for icon */
+}
+
+.nav-item:hover .nav-icon {
+    transform: translateY(-2px); /* Lift effect on icon hover */
+}
+
+.nav-text {
+    font-size: 12px; /* Increase text size for better readability */
+    text-align: center; /* Center align text */
+}
+
+/* Tournaments Page */
+.banner-img {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 15px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+}
+
+.banner-overlay h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-pills {
+    display: flex;
+    overflow-x: auto;
+    margin: 15px 0;
+    padding-bottom: 5px;
+}
+
+.info-pill {
+    background-color: var(--card-bg);
+    border: 1px solid var(--yellow);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.info-pill i {
+    color: var(--yellow);
+    margin-right: 5px;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid var(--secondary-bg);
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition */
+}
+
+.tab.active {
+    color: var(--yellow);
+    border-bottom-color: var(--yellow);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.rules-list {
+    margin-bottom: 20px;
+}
+
+.rule-item {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.rule-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.rule-header {
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.rule-header:hover {
+    background-color: var(--hover-bg);
+}
+
+.rule-title {
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.rule-content {
+    padding: 0 18px 18px;
+    max-height: none;
+    overflow: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: none;
+}
+
+
+.rule-content.active {
+    padding: 0 18px 18px;
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.rule-content p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+
+/* Tombol TikTok */
+.btn-tiktok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #000; /* Warna hitam khas TikTok */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    
+    text-align: center;
+}
+
+.btn-tiktok:hover {
+    background-color: #1f1f1f; /* Warna khas TikTok saat hover */
+    transform: scale(1.05);
+}
+
+.btn-tiktok i {
+    font-size: 20px;
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.team-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 15px 10px;
+    text-align: center;
+    transition: transform 0.2s ease; /* Smooth scale transition */
+}
+
+.team-card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.roomtour-img {
+    width: 100%; /* Supaya fleksibel sesuai container */
+    max-width: 800px; /* Batas maksimal biar nggak terlalu besar */
+    height: auto; /* Menjaga proporsi gambar */
+   
+    border-radius: 2px; /* Sudut sedikit melengkung */
+    display: block; /* Hindari space ekstra */
+    margin: 20px auto; /* Agar gambar berada di tengah */
+}
+
+.team-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.team-logo i {
+    font-size: 24px;
+    color: var(--yellow);
+}
+
+.logo-img {
+    width: 120px; /* Atur lebar sesuai kebutuhan */
+    height: auto; /* Menjaga rasio aspek gambar */
+}
+
+.team-card h4 {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 10px;
+    color: var(--text-secondary);
+}
+
+/* FAQ Page */
+.search-container {
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.search-container i {
+    color: var(--yellow);
+    margin-right: 10px;
+}
+
+.search-container input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-size: 14px;
+    flex: 1;
+}
+
+.search-container input::placeholder {
+    color: var(--text-secondary);
+}
+
+.faq-categories {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.faq-category {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: 1px solid var(--text-secondary);
+    color: var(--text-secondary);
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.faq-category.active {
+    background-color: var(--yellow);
+    color: var(--dark-bg);
+    border-color: var(--yellow);
+}
+
+.faq-item {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.faq-question:hover {
+    background-color: var(--hover-bg); /* Change background on hover */
+}
+
+.faq-question h3 {
+    font-size: 14px;
+    flex: 1;
+}
+
+.faq-question i {
+    color: var(--yellow);
+    transition: transform 0.3s; /* Smooth icon transition */
+}
+
+.faq-answer {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer.active {
+    padding: 0 15px 15px;
+    max-height: 300px;
+}
+
+.faq-answer p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Contact Page */
+.contact-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.admin-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.admin-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--secondary-bg);
+    border: 2px solid var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.admin-avatar i {
+    font-size: 24px;
+    color: var(--yellow);
+}
+
+.admin-details h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.admin-details p {
+    font-size: 12px;
+    color: var(--yellow);
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-btn {
+    flex: 1;
+    padding: 8px 0;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-bg);
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.contact-btn:hover {
+    background-color: var(--hover-bg); /* Change background on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.contact-btn i {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--yellow);
+}
+
+.community-links {
+    margin-bottom: 20px;
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.link-card:hover {
+    background-color: var(--hover-bg); /* Change background on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.link-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--secondary-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.link-icon i {
+    font-size: 20px;
+    color: var(--yellow);
+}
+
+.link-details {
+    flex: 1;
+}
+
+.link-details h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.link-details p {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.link-arrow {
+    color: var(--yellow);
+}
+
+/* Loading Animation */
+.loading {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading.active {
+    display: flex;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    border-top-color: var(--yellow);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Utility classes */
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-yellow {
+    color: var(--yellow);
+>>>>>>> 2419f03 (all commit)
 }
